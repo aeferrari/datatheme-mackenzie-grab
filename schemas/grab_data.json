@@ -1,0 +1,612 @@
+{
+    "name": "grab_data",
+    "path": "grab_data.csv",
+    "schema": {
+        "fields": [
+            {
+                "name": "site_code",
+                "type": "string",
+                "raises": "error",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "sample_type",
+                "type": "string",
+                "raises": "error",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "in_date",
+                "type": "date",
+                "raises": "error",
+                "constraints": {}
+            },
+            {
+                "name": "month_code",
+                "type": "integer",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "waterbody_type",
+                "type": "string",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "waterbody_name",
+                "type": "string",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "region",
+                "type": "string",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "ammonia_as_nitrogen",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "nitrogen_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "nitrogen_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "organic_carbon_dissolved",
+                "type": "numeric",
+                "constraints": {}
+            },
+            {
+                "name": "organic_carbon_total",
+                "type": "numeric",
+                "constraints": {}
+            },
+            {
+                "name": "phosphorous_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "phosphorous_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "alkalinity_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "conductivity_specific",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "ph",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "solids_total_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "solids_total_suspended",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "turbidity",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "calcium",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "chloride",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "floride",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "magnesium",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "nitrate_as_nitrogen",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "nitrite_as_nitrogen",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "potassium",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "sodium",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "sulphate",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "chlorophyll_a",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "aluminum_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "antimony_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "arsenic_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "barium_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "beryllium_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "cadmium_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "cesium_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "chromium_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "cobalt_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "copper_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "iron_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "lead_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "lithium_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "manganese_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "mercury_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "molybdenum_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "nickel_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "rubidium_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "selenium_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "silver_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "strontium_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "thallium_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "titanium_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "uranium_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "vanadium_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "zinc_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "aluminum_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "antimony_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "arsenic_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "barium_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "beryllium_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "cadmium_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "cesium_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "chromium_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "cobalt_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "copper_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "iron_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "lead_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "lithium_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "manganese_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "mercury_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "molybdenum_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "nickel_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "rubidium_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "selenium_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "silver_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "strontium_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "thallium_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "titanium_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "uranium_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "vanadium_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "zinc_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "ultra_trace_mercury_dissolved",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "ultra_trace_mercury_total",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "hardness_calculated",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "name": "temperature",
+                "type": "numeric",
+                "constraints": {
+                    "required": true
+                }
+            }
+        ]
+    },
+    "primaryKey": [
+        "site_code",
+        "sample_type",
+        "in_date"
+    ]
+}

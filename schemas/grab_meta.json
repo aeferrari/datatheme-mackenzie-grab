@@ -1,0 +1,73 @@
+
+{
+  "name": "grab_meta",
+  "path": "grab_meta.csv",
+  "schema": {
+    "fields": [
+      {
+        "name": "title",
+        "type": "string",
+        "raises": "error",
+        "constraints": {
+          "required": true,
+          "maxLength": true
+        }
+      },
+      {
+        "name": "extents",
+        "type": "string",
+        "constraints": {
+          "required": true
+        }
+      },
+      {
+        "name": "citations",
+        "type": "string",
+        "raises": "error",
+        "constraints": {
+          "required": true,
+          "maxLength": true
+        }
+      },
+      {
+        "name": "keywords",
+        "type": "string",
+        "raises": "error",
+        "constraints": {
+          "required": true,
+          "maxLength": true
+        }
+      },
+      {
+        "name": "format",
+        "type": "string",
+        "raises": "error",
+        "constraints": {
+          "required": true
+        }
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "raises": "error",
+        "constraints": {
+          "required": true
+        }
+      },
+      {
+        "name": "link",
+        "type": "string",
+        "constraints": {
+          "required": true
+        }
+      },
+      {
+        "name": "date_uploaded",
+        "type": "date",
+        "constraints": {
+          "required": true
+        }
+      }
+    ]
+  }
+}

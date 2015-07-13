@@ -1,0 +1,11 @@
+{
+    "name": "mackenzie.grab",
+    "version": "1.0.1",
+    "repository": "http://github.com/tesera/datatheme-mackenzie-grab.git",
+    "author": "Yves Richard",
+    "description": "Datatheme for Mackenzie Basin Grab data.",
+    "schemas": [
+        "./schemas/grab_data.json",
+        "./schemas/grab_meta.json"    
+    ]
+}
