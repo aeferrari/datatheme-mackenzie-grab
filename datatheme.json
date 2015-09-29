@@ -4,8 +4,20 @@
     "repository": "http://github.com/tesera/datatheme-mackenzie-grab.git",
     "author": "Yves Richard",
     "description": "Datatheme for Mackenzie Basin Grab data.",
-    "schemas": [
-        "./schemas/grab_data.json",
-        "./schemas/grab_meta.json"    
-    ]
+    "resources": [
+    {
+      "name": "grab_data",
+      "title": "Grab Data",
+      "path": "grab_data.csv",
+      "validator": "http://s3.amazonaws.com/tesera.data.themes/mackenzie.grab/awk/grab_data.awk",
+      "schema": "./schemas/grab_data.json"
+    },
+    {
+      "name": "grab_meta",
+      "title": "Grab Meta",
+      "path": "grab_meta.csv",
+      "validator": "http://s3.amazonaws.com/tesera.data.themes/mackenzie.grab/awk/grab_meta.awk",
+      "schema": "./schemas/grab_meta.json"
+    }
+  ]
 }

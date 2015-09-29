@@ -1,697 +1,781 @@
 {
-    "name": "grab_data",
-    "path": "grab_data.csv",
-    "schema": {
-        "fields": [
-            {
-                "name": "site",
-                "type": "string",
-                "raises": "error",
-                "constraints": {
-                    "required": true,
-                    "maxLength": 15
-                }
-            },
-            {
-                "name": "site_name",
-                "type": "string",
-                "raises": "warning",
-                "constraints": {
-                    "maxLength": 100
-                }
-            },
-            {
-                "name": "lab_id",
-                "type": "string",
-                "raises": "warning",
-                "constraints": {
-                    "maxLength": 25
-                }
-            },
-            {
-                "name": "sample_type",
-                "type": "string",
-                "raises": "warning"
-            },
-            {
-                "name": "date_in",
-                "type": "date",
-                "raises": "error",
-                "constraints": {
-                    "required": true
-                }
-            },
-            {
-                "name": "month_code",
-                "type": "number",
-                "raises": "warning"
-            },
-            {
-                "name": "waterbody_type",
-                "type": "string",
-                "raises": "warning"
-            },
-            {
-                "name": "waterbody_name",
-                "type": "string",
-                "raises": "warning"
-            },
-            {
-                "name": "region",
-                "type": "string",
-                "raises": "warning"
-            },
-            {
-                "name": "ammonia_as_nitrogen",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "nitrogen_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "nitrogen_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "organic_carbon_dissolved",
-                "type": "number",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "organic_carbon_total",
-                "type": "number",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "phosphorous_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "phosphorous_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "alkalinity_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "conductivity_specific",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "ph",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0,
-                    "maximum": 14
-                }
-            },
-            {
-                "name": "solids_total_dissolved",
-                "type": "number",
-                "raises": "error",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "solids_total_suspended",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "turbidity",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "calcium",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "chloride",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "floride",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "magnesium",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "nitrate_as_nitrogen",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "nitrite_as_nitrogen",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "potassium",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "sodium",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "sulphate",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "chlorophyll_a",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "aluminum_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "antimony_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "arsenic_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "barium_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "beryllium_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "cadmium_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "cesium_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "chromium_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "cobalt_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "copper_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "iron_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "lead_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "lithium_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "manganese_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "mercury_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "molybdenum_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "nickel_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "rubidium_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "selenium_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "silver_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "strontium_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "thallium_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "titanium_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "uranium_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "vanadium_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "zinc_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "aluminum_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "antimony_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "arsenic_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "barium_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "beryllium_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "cadmium_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "cesium_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "chromium_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "cobalt_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "copper_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "iron_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "lead_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "lithium_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "manganese_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "mercury_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "molybdenum_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "nickel_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "rubidium_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "selenium_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "silver_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "strontium_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "thallium_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "titanium_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "uranium_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "vanadium_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "zinc_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "ultra_trace_mercury_dissolved",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "ultra_trace_mercury_total",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "hardness_calculated",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            },
-            {
-                "name": "temperature",
-                "type": "number",
-                "raises": "warning",
-                "constraints": {
-                    "minimum": 0
-                }
-            }
-        ]
+  "fields": [
+    {
+      "name": "site",
+      "title": "Site Code",
+      "type": "string",
+      "raises": "error",
+      "constraints": {
+        "required": true,
+        "maxLength": 15
+      }
+    },
+    {
+      "name": "site_name",
+      "title": "Site Name",
+      "type": "string",
+      "raises": "warning",
+      "constraints": {
+        "maxLength": 100
+      }
+    },
+    {
+      "name": "lab_id",
+      "title": "Lab ID",
+      "type": "string",
+      "raises": "warning",
+      "constraints": {
+        "maxLength": 25
+      }
+    },
+    {
+      "name": "sample_type",
+      "title": "Sample type",
+      "type": "string",
+      "raises": "warning"
+    },
+    {
+      "name": "date_in",
+      "title": "Date",
+      "type": "date",
+      "raises": "error",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "month_code",
+      "title": "Month code",
+      "type": "number",
+      "raises": "warning"
+    },
+    {
+      "name": "waterbody_type",
+      "title": "Waterbody type",
+      "type": "string",
+      "raises": "warning"
+    },
+    {
+      "name": "waterbody_name",
+      "title": "Name of waterbody",
+      "type": "string",
+      "raises": "warning"
+    },
+    {
+      "name": "region",
+      "title": "Region",
+      "type": "string",
+      "raises": "warning"
+    },
+    {
+      "name": "ammonia_as_nitrogen",
+      "title": "Ammonia as Nitrogen",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "nitrogen_dissolved",
+      "title": "Nitrogen - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "nitrogen_total",
+      "title": "Nitrogen - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "organic_carbon_dissolved",
+      "title": "Organic Carbon - Dissolved",
+      "type": "number",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "organic_carbon_total",
+      "title": "Organic Carbon - Total",
+      "type": "number",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "phosphorous_dissolved",
+      "title": "Phosphorous - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "phosphorous_total",
+      "title": "Phosphorous - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "alkalinity_total",
+      "title": "Alkalinity - Total (as CaCO3)",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "conductivity_specific",
+      "title": "Conductivity - Specific (25iC)",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "ph",
+      "title": "pH",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0,
+        "maximum": 14
+      }
+    },
+    {
+      "name": "solids_total_dissolved",
+      "title": "Solids - Total Dissolved",
+      "type": "number",
+      "raises": "error",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "solids_total_suspended",
+      "title": "Solids - Total Suspended",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "turbidity",
+      "title": "Turbidity",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "calcium",
+      "title": "Calcium",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "chloride",
+      "title": "Chloride",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "floride",
+      "title": "Floride",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "magnesium",
+      "title": "Magnesium",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "nitrate_as_nitrogen",
+      "title": "Nitrate as Nitrogen",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "nitrite_as_nitrogen",
+      "title": "Nitrite as Nitrogen",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "potassium",
+      "title": "Potassium",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "sodium",
+      "title": "Sodium",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "sulphate",
+      "title": "Sulphate",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "chlorophyll_a",
+      "title": "Chlorophyll a",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "aluminum_dissolved",
+      "title": "Aluminum - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "antimony_dissolved",
+      "title": "Antimony - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "arsenic_dissolved",
+      "title": "Arsenic - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "barium_dissolved",
+      "title": "Barium - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "beryllium_dissolved",
+      "title": "Beryllium - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "cadmium_dissolved",
+      "title": "Cadmium - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "cesium_dissolved",
+      "title": "Cesium - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "chromium_dissolved",
+      "title": "Chromium - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "cobalt_dissolved",
+      "title": "Cobalt - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "copper_dissolved",
+      "title": "Copper - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "iron_dissolved",
+      "title": "Iron - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "lead_dissolved",
+      "title": "Lead - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "lithium_dissolved",
+      "title": "Lithium - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "manganese_dissolved",
+      "title": "Manganese - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "mercury_dissolved",
+      "title": "Mercury - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "molybdenum_dissolved",
+      "title": "Molybdenum - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "nickel_dissolved",
+      "title": "Nickel - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "rubidium_dissolved",
+      "title": "Rubidium - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "selenium_dissolved",
+      "title": "Selenium - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "silver_dissolved",
+      "title": "Silver - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "strontium_dissolved",
+      "title": "Strontium - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "thallium_dissolved",
+      "title": "Thallium - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "titanium_dissolved",
+      "title": "Titanium - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "uranium_dissolved",
+      "title": "Uranium - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "vanadium_dissolved",
+      "title": "Vanadium - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "zinc_dissolved",
+      "title": "Zinc - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "aluminum_total",
+      "title": "Aluminum - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "antimony_total",
+      "title": "Antimony - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "arsenic_total",
+      "title": "Arsenic - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "barium_total",
+      "title": "Barium - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "beryllium_total",
+      "title": "Beryllium - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "cadmium_total",
+      "title": "Cadmium - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "cesium_total",
+      "title": "Cesium - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "chromium_total",
+      "title": "Chromium - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "cobalt_total",
+      "title": "Cobalt - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "copper_total",
+      "title": "Copper - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "iron_total",
+      "title": "Iron - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "lead_total",
+      "title": "Lead - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "lithium_total",
+      "title": "Lithium - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "manganese_total",
+      "title": "Manganese - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "mercury_total",
+      "title": "Mercury - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "molybdenum_total",
+      "title": "Molybdenum - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "nickel_total",
+      "title": "Nickel - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "rubidium_total",
+      "title": "Rubidium - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "selenium_total",
+      "title": "Selenium - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "silver_total",
+      "title": "Silver - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "strontium_total",
+      "title": "Strontium - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "thallium_total",
+      "title": "Thallium - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "titanium_total",
+      "title": "Titanium - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "uranium_total",
+      "title": "Uranium - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "vanadium_total",
+      "title": "Vanadium - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "zinc_total",
+      "title": "Zinc - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "ultra_trace_mercury_dissolved",
+      "title": "Ultra Trace Mercury - Dissolved",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "ultra_trace_mercury_total",
+      "title": "Ultra Trace Mercury - Total",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "hardness_calculated",
+      "title": "Hardness (calculated)",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "temperature",
+      "title": "Temperature",
+      "type": "number",
+      "raises": "warning",
+      "constraints": {
+        "minimum": 0
+      }
     }
+  ]
 }
