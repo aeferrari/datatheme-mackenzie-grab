@@ -32,3 +32,4 @@ $ sh ./dt2dp.sh > datapackage.json
 When deploying to S3 use:
 bash publi.sh put dev.mackenzie.grab
 In .env file dev.mackenzie is the DATATHEME_ROOT and .[theme] is resolved dynamically. 
+
