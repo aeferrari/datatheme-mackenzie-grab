@@ -6,27 +6,20 @@
       "type": "string",
       "raises": "error",
       "constraints": {
-        "required": true,
-        "maxLength": 15
+        "required": true
       }
     },
     {
       "name": "site_name",
       "title": "Site Name",
       "type": "string",
-      "raises": "warning",
-      "constraints": {
-        "maxLength": 100
-      }
+      "raises": "warning"
     },
     {
       "name": "lab_id",
       "title": "Lab ID",
       "type": "string",
-      "raises": "warning",
-      "constraints": {
-        "maxLength": 25
-      }
+      "raises": "warning"
     },
     {
       "name": "sample_type",
