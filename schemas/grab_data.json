@@ -34,7 +34,7 @@
       "raises": "error",
       "constraints": {
         "required": true,
-        "pattern": "/^\\d{1,2}/\\d{1,2}/\\d{4}$/"
+        "pattern": "^[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}$"
       }
     },
     {
