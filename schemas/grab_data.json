@@ -30,7 +30,7 @@
     {
       "name": "date_in",
       "title": "Date",
-      "type": "date",
+      "type": "string",
       "raises": "error",
       "constraints": {
         "required": true,
