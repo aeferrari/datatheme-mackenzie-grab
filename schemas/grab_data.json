@@ -33,8 +33,7 @@
       "type": "date",
       "raises": "error",
       "constraints": {
-        "required": true,
-        "pattern": "^[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}$"
+        "required": true
       }
     },
     {
