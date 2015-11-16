@@ -33,7 +33,8 @@
       "type": "date",
       "raises": "error",
       "constraints": {
-        "required": true
+        "required": true,
+        "pattern": "/^\\d{1,2}/\\d{1,2}/\\d{4}$/"
       }
     },
     {
