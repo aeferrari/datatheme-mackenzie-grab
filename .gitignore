@@ -3,3 +3,4 @@ www/datapackage.json
 www/rules/
 www/awk/
 .DS_Store
+grab_data.csv

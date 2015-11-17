@@ -33,3 +33,4 @@ When deploying to S3 use:
 bash publi.sh put dev.mackenzie.grab
 In .env file dev.mackenzie is the DATATHEME_ROOT and .[theme] is resolved dynamically. 
 
+cat grab_data.csv | awk -v action=validate -f www/awk/grab_data.awk
