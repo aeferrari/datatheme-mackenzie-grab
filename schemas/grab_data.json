@@ -64,6 +64,7 @@
     {
       "name": "ammonia_as_nitrogen",
       "title": "Ammonia as Nitrogen",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -73,6 +74,7 @@
     {
       "name": "nitrogen_dissolved",
       "title": "Nitrogen - Dissolved",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -82,6 +84,7 @@
     {
       "name": "nitrogen_total",
       "title": "Nitrogen - Total",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -91,6 +94,7 @@
     {
       "name": "organic_carbon_dissolved",
       "title": "Organic Carbon - Dissolved",
+      "unit": "mg/L",
       "type": "number",
       "constraints": {
         "minimum": 0
@@ -99,6 +103,7 @@
     {
       "name": "organic_carbon_total",
       "title": "Organic Carbon - Total",
+      "unit": "mg/L",
       "type": "number",
       "constraints": {
         "minimum": 0
@@ -107,6 +112,7 @@
     {
       "name": "phosphorous_dissolved",
       "title": "Phosphorous - Dissolved",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -116,6 +122,7 @@
     {
       "name": "phosphorous_total",
       "title": "Phosphorous - Total",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -125,6 +132,7 @@
     {
       "name": "alkalinity_total",
       "title": "Alkalinity - Total (as CaCO3)",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -134,6 +142,7 @@
     {
       "name": "conductivity_specific",
       "title": "Conductivity - Specific (25iC)",
+      "unit": "µS/cm",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -153,6 +162,7 @@
     {
       "name": "solids_total_dissolved",
       "title": "Solids - Total Dissolved",
+      "unit": "mg/L",
       "type": "number",
       "raises": "error",
       "constraints": {
@@ -162,6 +172,7 @@
     {
       "name": "solids_total_suspended",
       "title": "Solids - Total Suspended",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -171,6 +182,7 @@
     {
       "name": "turbidity",
       "title": "Turbidity",
+      "unit": "NTU",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -180,6 +192,7 @@
     {
       "name": "calcium",
       "title": "Calcium",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -189,6 +202,7 @@
     {
       "name": "chloride",
       "title": "Chloride",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -198,6 +212,7 @@
     {
       "name": "floride",
       "title": "Floride",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -207,6 +222,7 @@
     {
       "name": "magnesium",
       "title": "Magnesium",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -216,6 +232,7 @@
     {
       "name": "nitrate_as_nitrogen",
       "title": "Nitrate as Nitrogen",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -225,6 +242,7 @@
     {
       "name": "nitrite_as_nitrogen",
       "title": "Nitrite as Nitrogen",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -234,6 +252,7 @@
     {
       "name": "potassium",
       "title": "Potassium",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -243,6 +262,7 @@
     {
       "name": "sodium",
       "title": "Sodium",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -252,6 +272,7 @@
     {
       "name": "sulphate",
       "title": "Sulphate",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -261,6 +282,7 @@
     {
       "name": "chlorophyll_a",
       "title": "Chlorophyll a",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -270,6 +292,7 @@
     {
       "name": "aluminum_dissolved",
       "title": "Aluminum - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -279,6 +302,7 @@
     {
       "name": "antimony_dissolved",
       "title": "Antimony - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -288,6 +312,7 @@
     {
       "name": "arsenic_dissolved",
       "title": "Arsenic - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -297,6 +322,7 @@
     {
       "name": "barium_dissolved",
       "title": "Barium - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -306,6 +332,7 @@
     {
       "name": "beryllium_dissolved",
       "title": "Beryllium - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -315,6 +342,7 @@
     {
       "name": "cadmium_dissolved",
       "title": "Cadmium - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -324,6 +352,7 @@
     {
       "name": "cesium_dissolved",
       "title": "Cesium - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -333,6 +362,7 @@
     {
       "name": "chromium_dissolved",
       "title": "Chromium - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -342,6 +372,7 @@
     {
       "name": "cobalt_dissolved",
       "title": "Cobalt - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -351,6 +382,7 @@
     {
       "name": "copper_dissolved",
       "title": "Copper - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -360,6 +392,7 @@
     {
       "name": "iron_dissolved",
       "title": "Iron - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -369,6 +402,7 @@
     {
       "name": "lead_dissolved",
       "title": "Lead - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -378,6 +412,7 @@
     {
       "name": "lithium_dissolved",
       "title": "Lithium - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -387,6 +422,7 @@
     {
       "name": "manganese_dissolved",
       "title": "Manganese - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -396,6 +432,7 @@
     {
       "name": "mercury_dissolved",
       "title": "Mercury - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -405,6 +442,7 @@
     {
       "name": "molybdenum_dissolved",
       "title": "Molybdenum - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -414,6 +452,7 @@
     {
       "name": "nickel_dissolved",
       "title": "Nickel - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -423,6 +462,7 @@
     {
       "name": "rubidium_dissolved",
       "title": "Rubidium - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -432,6 +472,7 @@
     {
       "name": "selenium_dissolved",
       "title": "Selenium - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -441,6 +482,7 @@
     {
       "name": "silver_dissolved",
       "title": "Silver - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -450,6 +492,7 @@
     {
       "name": "strontium_dissolved",
       "title": "Strontium - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -459,6 +502,7 @@
     {
       "name": "thallium_dissolved",
       "title": "Thallium - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -468,6 +512,7 @@
     {
       "name": "titanium_dissolved",
       "title": "Titanium - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -477,6 +522,7 @@
     {
       "name": "uranium_dissolved",
       "title": "Uranium - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -486,6 +532,7 @@
     {
       "name": "vanadium_dissolved",
       "title": "Vanadium - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -495,6 +542,7 @@
     {
       "name": "zinc_dissolved",
       "title": "Zinc - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -504,6 +552,7 @@
     {
       "name": "aluminum_total",
       "title": "Aluminum - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -513,6 +562,7 @@
     {
       "name": "antimony_total",
       "title": "Antimony - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -522,6 +572,7 @@
     {
       "name": "arsenic_total",
       "title": "Arsenic - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -531,6 +582,7 @@
     {
       "name": "barium_total",
       "title": "Barium - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -540,6 +592,7 @@
     {
       "name": "beryllium_total",
       "title": "Beryllium - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -549,6 +602,7 @@
     {
       "name": "cadmium_total",
       "title": "Cadmium - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -558,6 +612,7 @@
     {
       "name": "cesium_total",
       "title": "Cesium - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -567,6 +622,7 @@
     {
       "name": "chromium_total",
       "title": "Chromium - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -576,6 +632,7 @@
     {
       "name": "cobalt_total",
       "title": "Cobalt - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -585,6 +642,7 @@
     {
       "name": "copper_total",
       "title": "Copper - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -594,6 +652,7 @@
     {
       "name": "iron_total",
       "title": "Iron - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -603,6 +662,7 @@
     {
       "name": "lead_total",
       "title": "Lead - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -612,6 +672,7 @@
     {
       "name": "lithium_total",
       "title": "Lithium - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -621,6 +682,7 @@
     {
       "name": "manganese_total",
       "title": "Manganese - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -630,6 +692,7 @@
     {
       "name": "mercury_total",
       "title": "Mercury - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -639,6 +702,7 @@
     {
       "name": "molybdenum_total",
       "title": "Molybdenum - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -648,6 +712,7 @@
     {
       "name": "nickel_total",
       "title": "Nickel - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -657,6 +722,7 @@
     {
       "name": "rubidium_total",
       "title": "Rubidium - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -666,6 +732,7 @@
     {
       "name": "selenium_total",
       "title": "Selenium - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -675,6 +742,7 @@
     {
       "name": "silver_total",
       "title": "Silver - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -684,6 +752,7 @@
     {
       "name": "strontium_total",
       "title": "Strontium - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -693,6 +762,7 @@
     {
       "name": "thallium_total",
       "title": "Thallium - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -702,6 +772,7 @@
     {
       "name": "titanium_total",
       "title": "Titanium - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -711,6 +782,7 @@
     {
       "name": "uranium_total",
       "title": "Uranium - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -720,6 +792,7 @@
     {
       "name": "vanadium_total",
       "title": "Vanadium - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -729,6 +802,7 @@
     {
       "name": "zinc_total",
       "title": "Zinc - Total",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -738,6 +812,7 @@
     {
       "name": "ultra_trace_mercury_dissolved",
       "title": "Ultra Trace Mercury - Dissolved",
+      "unit": "µg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -756,6 +831,7 @@
     {
       "name": "hardness_calculated",
       "title": "Hardness (calculated)",
+      "unit": "mg/L",
       "type": "number",
       "raises": "warning",
       "constraints": {
@@ -765,6 +841,7 @@
     {
       "name": "temperature",
       "title": "Temperature",
+      "unit": "oC",
       "type": "number",
       "raises": "warning",
       "constraints": {
