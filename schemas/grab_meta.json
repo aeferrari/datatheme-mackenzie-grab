@@ -81,7 +81,10 @@
     {
       "name": "file_identifier",
       "title": "File Identifier",
-      "type": "string"
+      "type": "string",
+      "constraints": {
+        "hidden": true
+      }
     },
     {
       "name": "language",
@@ -248,12 +251,18 @@
     {
       "name": "begin_date",
       "title": "Begin Date",
-      "type": "date"
+      "type": "date",
+      "constraints": {
+        "hidden": true
+      }
     },
     {
       "name": "end_date",
       "title": "End Date",
-      "type": "date"
+      "type": "date",
+      "constraints": {
+        "hidden": true
+      }
     },
     {
       "name": "distribution_organization",
