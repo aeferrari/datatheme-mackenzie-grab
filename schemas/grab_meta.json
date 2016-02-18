@@ -15,15 +15,6 @@
       "type": "string"
     },
     {
-      "name": "location",
-      "title": "Location",
-      "type": "geojson",
-      "raises": "error",
-      "constraints": {
-        "required": true
-      }
-    },
-    {
       "name": "extents",
       "title": "Extents",
       "type": "string"
