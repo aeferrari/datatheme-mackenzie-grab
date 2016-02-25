@@ -70,28 +70,12 @@
       "type": "string"
     },
     {
-      "name": "file_identifier",
-      "title": "File Identifier",
+      "name": "doi",
+      "title": "DOI",
       "type": "string",
       "constraints": {
         "hidden": true
       }
-    },
-    {
-      "name": "language",
-      "title": "Language",
-      "type": "string"
-    },
-    {
-      "name": "character_set",
-      "title": "Character Set",
-      "type": "string"
-
-    },
-    {
-      "name": "hierarchy_level",
-      "title": "Hierarchy Level",
-      "type": "string"
     },
     {
       "name": "contact_person",
@@ -164,11 +148,6 @@
       "type": "string"
     },
     {
-      "name": "responsible_parties",
-      "title": "Responsible Parties",
-      "type": "string"
-    },
-    {
       "name": "recommended_citation",
       "title": "Recommended Citation",
       "type": "string"
@@ -189,11 +168,6 @@
       "type": "string"
     },
     {
-      "name": "topic_category",
-      "title": "Topic Category",
-      "type": "string"
-    },
-    {
       "name": "status",
       "title": "Status",
       "type": "string"
@@ -204,18 +178,8 @@
       "type": "string"
     },
     {
-      "name": "thesaurus_name",
-      "title": "Thesaurus Name",
-      "type": "string"
-    },
-    {
       "name": "use_constraints",
       "title": "Use Constraints",
-      "type": "string"
-    },
-    {
-      "name": "access_contraints",
-      "title": "Access Constraints",
       "type": "string"
     },
     {
