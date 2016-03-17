@@ -232,56 +232,6 @@
       }
     },
     {
-      "name": "distribution_organization",
-      "title": "Contact Organization",
-      "type": "string"
-    },
-    {
-      "name": "distribution_person",
-      "title": "Contant Person",
-      "type": "string"
-    },
-    {
-      "name": "distribution_position",
-      "title": "Contant Position",
-      "type": "string"
-    },
-    {
-      "name": "distribution_address",
-      "title": "Address",
-      "type": "string"
-    },
-    {
-      "name": "distribution_city",
-      "title": "City",
-      "type": "number"
-    },
-    {
-      "name": "distribution_province",
-      "title": "Province",
-      "type": "string"
-    },
-    {
-      "name": "distribution_postal_code",
-      "title": "Postal Code",
-      "type": "string"
-    },
-    {
-      "name": "distribution_country",
-      "title": "Country",
-      "type": "string"
-    },
-    {
-      "name": "distribution_phone",
-      "title": "Phone",
-      "type": "string"
-    },
-    {
-      "name": "distribution_email",
-      "title": "Email",
-      "type": "string"
-    },
-    {
       "name": "maintenance_frequency",
       "title": "Maintenance Frequency",
       "type": "string"
