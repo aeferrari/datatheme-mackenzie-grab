@@ -185,23 +185,35 @@
     {
       "name": "west_long",
       "title": "West Bound Longitude",
-      "type": "string"
+      "type": "string",
+      "constraints": {
+        "hidden": true
+      }
     },
     {
       "name": "east_long",
       "title": "East Bound Longitude",
-      "type": "string"
+      "type": "string",
+      "constraints": {
+        "hidden": true
+      }
 
     },
     {
       "name": "north_lat",
       "title": "North Bound Latitude",
-      "type": "string"
+      "type": "string",
+      "constraints": {
+        "hidden": true
+      }
     },
     {
       "name": "south_lat",
       "title": "South Bound Latitude",
-      "type": "string"
+      "type": "string",
+      "constraints": {
+        "hidden": true
+      }
     },
     {
       "name": "begin_date",
