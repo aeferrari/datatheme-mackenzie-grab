@@ -30,12 +30,7 @@
     {
       "name": "date_in",
       "title": "Date",
-      "type": "string",
-      "raises": "error",
-      "constraints": {
-        "required": true,
-        "pattern": "/([0-9][0-9]?\\/[0-9][0-9]?\\/[0-9][0-9][0-9]?[0-9]?)/"
-      }
+      "type": "date"
     },
     {
       "name": "month_code",
