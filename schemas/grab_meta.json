@@ -1,26 +1,8 @@
 {
   "fields": [
-        {
-      "name": "metadata_id",
-      "title": "Metadata ID",
-      "type": "string",
-      "raises": "error",
-      "constraints": {
-        "required": true
-      }
-    },
     {
       "name": "program_id",
       "title": "Program ID",
-      "type": "string",
-      "raises": "error",
-      "constraints": {
-        "required": true
-      }
-    },
-    {
-      "name": "contact_id",
-      "title": "Contact ID",
       "type": "string",
       "raises": "error",
       "constraints": {
