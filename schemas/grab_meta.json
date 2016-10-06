@@ -53,12 +53,12 @@
     {
       "name": "start_date",
       "title": "Start Date",
-      "type": "date",
+      "type": "date"
     },
     {
       "name": "end_date",
       "title": "End Date",
-      "type": "date",
+      "type": "date"
     }
   ]
 }
