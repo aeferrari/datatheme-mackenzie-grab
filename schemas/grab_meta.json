@@ -26,21 +26,6 @@
       "constraints": {
         "required": true
       }
-    },
-    {
-      "name": "bounding_box",
-      "title": "Bounding Box",
-      "type": "geojson"
-    },
-    {
-      "name": "start_date",
-      "title": "Start Date",
-      "type": "date"
-    },
-    {
-      "name": "end_date",
-      "title": "End Date",
-      "type": "date"
     }
   ]
 }
