@@ -1601,7 +1601,7 @@
       "type": "string"
     },
     {
-      "name": "qc/qa_status",
+      "name": "qc_qa_status",
       "title": "QC/QA Status",
       "type": "string"
     },
