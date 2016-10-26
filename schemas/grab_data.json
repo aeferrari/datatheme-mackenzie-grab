@@ -393,8 +393,8 @@
       }
     },
        {
-      "name": "nitrate_as_nitrogen",
-      "title": "Nitrate as Nitrogen",
+      "name": "nitrite_as_nitrogen",
+      "title": "Nitrite as Nitrogen",
       "unit": "mg/L",
       "type": "number",
       "raises": "warning",
@@ -403,8 +403,8 @@
       }
     },
     {
-      "name": "nitrate_as_nitrogen_ldl",
-      "title": "Nitrate as Nitrogen LDL",
+      "name": "nitrite_as_nitrogen_ldl",
+      "title": "Nitrite as Nitrogen LDL",
       "unit": "mg/L",
       "type": "number",
       "raises": "warning",
