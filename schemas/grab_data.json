@@ -16,12 +16,6 @@
       "raises": "warning"
     },
     {
-      "name": "lab_id",
-      "title": "Lab ID",
-      "type": "string",
-      "raises": "warning"
-    },
-    {
       "name": "sample_type",
       "title": "Sample type",
       "type": "string",
@@ -1643,11 +1637,6 @@
     {
       "name": "lab_analysis_method",
       "title": "Lab Analysis Method",
-      "type": "string"
-    },
-    {
-      "name": "method_det_limit",
-      "title": "Method Det Limit",
       "type": "string"
     }
   ]
