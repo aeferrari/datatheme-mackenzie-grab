@@ -1623,21 +1623,6 @@
       "name": "lab_analysis_date",
       "title": "Lab Analysis Date",
       "type": "string"
-    },
-    {
-      "name": "sample_pres_method",
-      "title": "Sample Pres Method",
-      "type": "string"
-    },
-    {
-      "name": "sample_prep_method",
-      "title": "Sample Prep Method",
-      "type": "string"
-    },
-    {
-      "name": "lab_analysis_method",
-      "title": "Lab Analysis Method",
-      "type": "string"
     }
   ]
 }
