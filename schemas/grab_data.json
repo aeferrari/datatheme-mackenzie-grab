@@ -1,1628 +1,1815 @@
 {
   "fields": [
-    {
-      "name": "site",
-      "title": "Site Code",
-      "type": "string",
-      "raises": "error",
-      "constraints": {
+      {
+        "name": "site",
+        "title": "Site Code",
+        "type": "string",
+        "unit": "",
+        "example": "",
+        "raises": "error",
+        "constraints": {
         "required": true
-      }
-    },
-    {
-      "name": "site_name",
-      "title": "Site Name",
-      "type": "string",
-      "raises": "warning"
-    },
-    {
-      "name": "sample_type",
-      "title": "Sample type",
-      "type": "string",
-      "raises": "warning"
-    },
-    {
-      "name": "date_in",
-      "title": "Date",
-      "type": "date"
-    },
-    {
-      "name": "month_code",
-      "title": "Month code",
-      "type": "number",
-      "raises": "warning"
-    },
-    {
-      "name": "waterbody_type",
-      "title": "Waterbody type",
-      "type": "string",
-      "raises": "warning"
-    },
-    {
-      "name": "waterbody_name",
-      "title": "Name of waterbody",
-      "type": "string",
-      "raises": "warning"
-    },
-    {
-      "name": "region",
-      "title": "Region",
-      "type": "string",
-      "raises": "warning"
-    },
-    {
-      "name": "ammonia_as_nitrogen",
-      "title": "Ammonia as Nitrogen",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "ammonia_as_nitrogen_ldl",
-      "title": "Ammonia as Nitrogen ammonia_as_nitrogen_ldl",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "nitrogen_dissolved",
-      "title": "Nitrogen - Dissolved",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "nitrogen_dissolved_ldl",
-      "title": "Nitrogen - Dissolved LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "nitrogen_total",
-      "title": "Nitrogen - Total",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "nitrogen_total_ldl",
-      "title": "Nitrogen - Total LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "organic_carbon_dissolved",
-      "title": "Organic Carbon - Dissolved",
-      "unit": "mg/L",
-      "type": "number",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "organic_carbon_dissolved_ldl",
-      "title": "Organic Carbon - Dissolved LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "organic_carbon_total",
-      "title": "Organic Carbon - Total",
-      "unit": "mg/L",
-      "type": "number",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "organic_carbon_total_ldl",
-      "title": "Organic Carbon - Total LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "phosphorous_dissolved",
-      "title": "Phosphorous - Dissolved",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "phosphorous_dissolved_ldl",
-      "title": "Phosphorous - Dissolved LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "phosphorous_total",
-      "title": "Phosphorous - Total",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "phosphorous_total_ldl",
-      "title": "Phosphorous - Total LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "alkalinity_total",
-      "title": "Alkalinity - Total (as CaCO3)",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "alkalinity_total_ldl",
-      "title": "Alkalinity - Total (as CaCO3) LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "conductivity_specific",
-      "title": "Conductivity - Specific (25iC)",
-      "unit": "µS/cm",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "conductivity_specific_ldl",
-      "title": "Conductivity - Specific (25iC) LDL",
-      "unit": "µS/cm",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "ph",
-      "title": "pH",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0,
-        "maximum": 14
-      }
-    },
-    {
-      "name": "solids_total_dissolved",
-      "title": "Solids - Total Dissolved",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "error",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "solids_total_dissolved_ldl",
-      "title": "Solids - Total Dissolved LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "error",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "solids_total_suspended",
-      "title": "Solids - Total Suspended",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "solids_total_suspended_ldl",
-      "title": "Solids - Total Suspended LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "turbidity",
-      "title": "Turbidity",
-      "unit": "NTU",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "calcium",
-      "title": "Calcium",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "calcium_ldl",
-      "title": "Calcium LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "chloride",
-      "title": "Chloride",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "chloride_ldl",
-      "title": "Chloride LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "floride",
-      "title": "Floride",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "floride_ldl",
-      "title": "Floride LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "magnesium",
-      "title": "Magnesium",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "magnesium_ldl",
-      "title": "Magnesium LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "nitrate_as_nitrogen",
-      "title": "Nitrate as Nitrogen",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "nitrate_as_nitrogen_ldl",
-      "title": "Nitrate as Nitrogen LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-       {
-      "name": "nitrite_as_nitrogen",
-      "title": "Nitrite as Nitrogen",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "nitrite_as_nitrogen_ldl",
-      "title": "Nitrite as Nitrogen LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "potassium",
-      "title": "Potassium",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "potassium_ldl",
-      "title": "Potassium LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "sodium",
-      "title": "Sodium",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "sodium_ldl",
-      "title": "Sodium LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "sulphate",
-      "title": "Sulphate",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "sulphate_ldl",
-      "title": "Sulphate LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "chlorophyll_a",
-      "title": "Chlorophyll a",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "chlorophyll_a_ldl",
-      "title": "Chlorophyll a LDL",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "aluminum_dissolved",
-      "title": "Aluminum - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "aluminum_dissolved_ldl",
-      "title": "Aluminum - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "antimony_dissolved",
-      "title": "Antimony - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "antimony_dissolved_ldl",
-      "title": "Antimony - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "arsenic_dissolved",
-      "title": "Arsenic - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "arsenic_dissolved_ldl",
-      "title": "Arsenic - Dissolved_LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "barium_dissolved",
-      "title": "Barium - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "barium_dissolved_ldl",
-      "title": "Barium - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "beryllium_dissolved",
-      "title": "Beryllium - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "beryllium_dissolved_ldl",
-      "title": "Beryllium - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "cadmium_dissolved",
-      "title": "Cadmium - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "cadmium_dissolved_ldl",
-      "title": "Cadmium - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "cesium_dissolved",
-      "title": "Cesium - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "cesium_dissolved_ldl",
-      "title": "Cesium - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "chromium_dissolved",
-      "title": "Chromium - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "chromium_dissolved_ldl",
-      "title": "Chromium - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "cobalt_dissolved",
-      "title": "Cobalt - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "cobalt_dissolved_ldl",
-      "title": "Cobalt - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "copper_dissolved",
-      "title": "Copper - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "copper_dissolved_ldl",
-      "title": "Copper - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "iron_dissolved",
-      "title": "Iron - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "iron_dissolved_ldl",
-      "title": "Iron - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "lead_dissolved",
-      "title": "Lead - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "lead_dissolved_ldl",
-      "title": "Lead - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "lithium_dissolved",
-      "title": "Lithium - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "lithium_dissolved_ldl",
-      "title": "Lithium - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "manganese_dissolved",
-      "title": "Manganese - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "manganese_dissolved_ldl",
-      "title": "Manganese - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "mercury_dissolved",
-      "title": "Mercury - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "mercury_dissolved_ldl",
-      "title": "Mercury - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "molybdenum_dissolved",
-      "title": "Molybdenum - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "molybdenum_dissolved_ldl",
-      "title": "Molybdenum - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "nickel_dissolved",
-      "title": "Nickel - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "nickel_dissolved_ldl",
-      "title": "Nickel - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "rubidium_dissolved",
-      "title": "Rubidium - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "rubidium_dissolved_ldl",
-      "title": "Rubidium - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "selenium_dissolved",
-      "title": "Selenium - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "selenium_dissolved_ldl",
-      "title": "Selenium - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "silver_dissolved",
-      "title": "Silver - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "silver_dissolved_ldl",
-      "title": "Silver - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "strontium_dissolved",
-      "title": "Strontium - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "strontium_dissolved_ldl",
-      "title": "Strontium - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "thallium_dissolved",
-      "title": "Thallium - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "thallium_dissolved_ldl",
-      "title": "Thallium - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "titanium_dissolved",
-      "title": "Titanium - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "titanium_dissolved_ldl",
-      "title": "Titanium - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "uranium_dissolved",
-      "title": "Uranium - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "uranium_dissolved_ldl",
-      "title": "Uranium - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "vanadium_dissolved",
-      "title": "Vanadium - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "vanadium_dissolved_ldl",
-      "title": "Vanadium - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "zinc_dissolved",
-      "title": "Zinc - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "zinc_dissolved_ldl",
-      "title": "Zinc - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "aluminum_total",
-      "title": "Aluminum - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "aluminum_total_ldl",
-      "title": "Aluminum - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "antimony_total",
-      "title": "Antimony - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "antimony_total_ldl",
-      "title": "Antimony - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "arsenic_total",
-      "title": "Arsenic - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "arsenic_total_ldl",
-      "title": "Arsenic - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "barium_total",
-      "title": "Barium - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "barium_total_ldl",
-      "title": "Barium - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "beryllium_total",
-      "title": "Beryllium - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "beryllium_total_ldl",
-      "title": "Beryllium - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "cadmium_total",
-      "title": "Cadmium - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "cadmium_total_ldl",
-      "title": "Cadmium - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "cesium_total",
-      "title": "Cesium - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "cesium_total_ldl",
-      "title": "Cesium - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "chromium_total",
-      "title": "Chromium - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "chromium_total_ldl",
-      "title": "Chromium - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "cobalt_total",
-      "title": "Cobalt - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "cobalt_total_ldl",
-      "title": "Cobalt - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "copper_total",
-      "title": "Copper - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "copper_total_ldl",
-      "title": "Copper - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "iron_total",
-      "title": "Iron - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "iron_total_ldl",
-      "title": "Iron - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "lead_total",
-      "title": "Lead - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "lead_total_ldl",
-      "title": "Lead - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "lithium_total",
-      "title": "Lithium - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "lithium_total_ldl",
-      "title": "Lithium - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "manganese_total",
-      "title": "Manganese - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "manganese_total_ldl",
-      "title": "Manganese - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "mercury_total",
-      "title": "Mercury - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "mercury_total_ldl",
-      "title": "Mercury - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "molybdenum_total",
-      "title": "Molybdenum - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "molybdenum_total_ldl",
-      "title": "Molybdenum - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "nickel_total",
-      "title": "Nickel - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "nickel_total_ldl",
-      "title": "Nickel - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "rubidium_total",
-      "title": "Rubidium - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "rubidium_total_ldl",
-      "title": "Rubidium - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "selenium_total",
-      "title": "Selenium - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "selenium_total_ldl",
-      "title": "Selenium - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "silver_total",
-      "title": "Silver - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "silver_total_ldl",
-      "title": "Silver - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "strontium_total",
-      "title": "Strontium - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "strontium_total_ldl",
-      "title": "Strontium - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "thallium_total",
-      "title": "Thallium - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "thallium_total_ldl",
-      "title": "Thallium - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "titanium_total",
-      "title": "Titanium - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "titanium_total_ldl",
-      "title": "Titanium - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "uranium_total",
-      "title": "Uranium - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "uranium_total_ldl",
-      "title": "Uranium - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "vanadium_total",
-      "title": "Vanadium - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "vanadium_total_ldl",
-      "title": "Vanadium - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "zinc_total",
-      "title": "Zinc - Total",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "zinc_total_ldl",
-      "title": "Zinc - Total LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "ultra_trace_mercury_dissolved",
-      "title": "Ultra Trace Mercury - Dissolved",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "ultra_trace_mercury_dissolved_ldl",
-      "title": "Ultra Trace Mercury - Dissolved LDL",
-      "unit": "µg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "ultra_trace_mercury_total",
-      "title": "Ultra Trace Mercury - Total",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-        {
-      "name": "ultra_trace_mercury_total_ldl",
-      "title": "Ultra Trace Mercury - Total LDL",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "hardness_calculated",
-      "title": "Hardness (calculated)",
-      "unit": "mg/L",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "temperature",
-      "title": "Temperature",
-      "unit": "oC",
-      "type": "number",
-      "raises": "warning",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "update_frequency",
-      "title": "Update Frequency",
-      "type": "string"
-    },
-    {
-      "name": "status",
-      "title": "Status",
-      "type": "string"
-    },
-    {
-      "name": "qc_qa_status",
-      "title": "QC/QA Status",
-      "type": "string"
-    },
-    {
-      "name": "validation_type",
-      "title": "Validation type",
-      "type": "string"
-    },
-    {
-      "name": "sample_depth",
-      "title": "Depth of Sample",
-      "type": "string"
-    },
-    {
-      "name": "sample_location_type",
-      "title": "Sample Location Type",
-      "type": "string"
-    },
-    {
-      "name": "analysis_lab",
-      "title": "Analysis Lab",
-      "type": "string"
-    },
-    {
-      "name": "lab_analysis_date",
-      "title": "Lab Analysis Date",
-      "type": "string"
-    }
-  ]
+        }
+      },
+      {
+        "name": "site_name",
+        "title": "Site Name",
+        "type": "string",
+        "unit": "",
+        "example": "Yellowknife at Yellowknife Bay - Dettah / Great Slave Lake"
+      },
+      {
+        "name": "sample_type",
+        "title": "Sample type",
+        "type": "string",
+        "unit": "",
+        "example": "surface grab"
+      },
+      {
+        "name": "date_in",
+        "title": "Date",
+        "type": "date",
+        "unit": "",
+        "example": "8/14/15"
+      },
+      {
+        "name": "month_code",
+        "title": "Month code",
+        "type": "number",
+        "unit": "",
+        "example": 8
+      },
+      {
+        "name": "waterbody_type",
+        "title": "Waterbody type",
+        "type": "string",
+        "unit": "",
+        "example": "Lake"
+      },
+      {
+        "name": "waterbody_name",
+        "title": "Name of waterbody",
+        "type": "string",
+        "unit": "",
+        "example": "Great Slave Lake"
+      },
+      {
+        "name": "region",
+        "title": "Region",
+        "type": "string",
+        "unit": "",
+        "example": "Akaitcho"
+      },
+      {
+        "name": "ammonia_as_nitrogen",
+        "title": "Ammonia as Nitrogen",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "ammonia_as_nitrogen_ldl",
+        "title": "Ammonia as Nitrogen LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "nitrogen_dissolved",
+        "title": "Nitrogen - Dissolved",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "nitrogen_dissolved_ldl",
+        "title": "Nitrogen - Dissolved LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "nitrogen_total",
+        "title": "Nitrogen - Total",
+        "type": "number",
+        "unit": "mg/L",
+        "example": 0.23,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "nitrogen_total_ldl",
+        "title": "Nitrogen - Total LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "organic_carbon_dissolved",
+        "title": "Organic Carbon - Dissolved",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "organic_carbon_dissolved_ldl",
+        "title": "Organic Carbon - Dissolved LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "organic_carbon_total",
+        "title": "Organic Carbon - Total",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "organic_carbon_total_ldl",
+        "title": "Organic Carbon - Total LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "phosphorous_dissolved",
+        "title": "Phosphorous - Dissolved",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "phosphorous_dissolved_ldl",
+        "title": "Phosphorous - Dissolved LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "phosphorous_total",
+        "title": "Phosphorous - Total",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "phosphorous_total_ldl",
+        "title": "Phosphorous - Total LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "alkalinity_total",
+        "title": "Alkalinity - Total (as CaCO3)",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "alkalinity_total_ldl",
+        "title": "Alkalinity - Total (as CaCO3) LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "conductivity_specific",
+        "title": "Conductivity - Specific (25iC)",
+        "type": "number",
+        "unit": "µS/cm",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "conductivity_specific_ldl",
+        "title": "Conductivity - Specific (25iC) LDL",
+        "type": "number",
+        "unit": "µS/cm",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "ph",
+        "title": "pH",
+        "type": "number",
+        "unit": "",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0,
+          "maximum": 14
+          }
+      },
+      {
+        "name": "solids_total_dissolved",
+        "title": "Solids - Total Dissolved",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "error",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "solids_total_dissolved_ldl",
+        "title": "Solids - Total Dissolved LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "error",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "solids_total_suspended",
+        "title": "Solids - Total Suspended",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "solids_total_suspended_ldl",
+        "title": "Solids - Total Suspended LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "turbidity",
+        "title": "Turbidity",
+        "type": "number",
+        "unit": "NTU",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "calcium",
+        "title": "Calcium",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "calcium_ldl",
+        "title": "Calcium LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "chloride",
+        "title": "Chloride",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "chloride_ldl",
+        "title": "Chloride LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "floride",
+        "title": "Floride",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "floride_ldl",
+        "title": "Floride LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "magnesium",
+        "title": "Magnesium",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "magnesium_ldl",
+        "title": "Magnesium LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "nitrate_as_nitrogen",
+        "title": "Nitrate as Nitrogen",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "nitrate_as_nitrogen_ldl",
+        "title": "Nitrate as Nitrogen LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "nitrite_as_nitrogen",
+        "title": "Nitrite as Nitrogen",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "nitrite_as_nitrogen_ldl",
+        "title": "Nitrite as Nitrogen LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "potassium",
+        "title": "Potassium",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "potassium_ldl",
+        "title": "Potassium LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "sodium",
+        "title": "Sodium",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "sodium_ldl",
+        "title": "Sodium LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "sulphate",
+        "title": "Sulphate",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "sulphate_ldl",
+        "title": "Sulphate LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "chlorophyll_a",
+        "title": "Chlorophyll a",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "chlorophyll_a_ldl",
+        "title": "Chlorophyll a LDL",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "aluminum_dissolved",
+        "title": "Aluminum - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 2.7,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "aluminum_dissolved_ldl",
+        "title": "Aluminum - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.6,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "antimony_dissolved",
+        "title": "Antimony - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "antimony_dissolved_ldl",
+        "title": "Antimony - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "arsenic_dissolved",
+        "title": "Arsenic - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.4,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "arsenic_dissolved_ldl",
+        "title": "Arsenic - Dissolved_LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "barium_dissolved",
+        "title": "Barium - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 51.8,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "barium_dissolved_ldl",
+        "title": "Barium - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "beryllium_dissolved",
+        "title": "Beryllium - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 1.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "beryllium_dissolved_ldl",
+        "title": "Beryllium - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "cadmium_dissolved",
+        "title": "Cadmium - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.07,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "cadmium_dissolved_ldl",
+        "title": "Cadmium - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.05,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "cesium_dissolved",
+        "title": "Cesium - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 1.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "cesium_dissolved_ldl",
+        "title": "Cesium - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "chromium_dissolved",
+        "title": "Chromium - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.3,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "chromium_dissolved_ldl",
+        "title": "Chromium - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "cobalt_dissolved",
+        "title": "Cobalt - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "cobalt_dissolved_ldl",
+        "title": "Cobalt - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "copper_dissolved",
+        "title": "Copper - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 1.9,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "copper_dissolved_ldl",
+        "title": "Copper - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "iron_dissolved",
+        "title": "Iron - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 1.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "iron_dissolved_ldl",
+        "title": "Iron - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 5,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "lead_dissolved",
+        "title": "Lead - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.3,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "lead_dissolved_ldl",
+        "title": "Lead - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "lithium_dissolved",
+        "title": "Lithium - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 4.3,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "lithium_dissolved_ldl",
+        "title": "Lithium - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "manganese_dissolved",
+        "title": "Manganese - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "manganese_dissolved_ldl",
+        "title": "Manganese - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "mercury_dissolved",
+        "title": "Mercury - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 1.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "mercury_dissolved_ldl",
+        "title": "Mercury - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "molybdenum_dissolved",
+        "title": "Molybdenum - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "molybdenum_dissolved_ldl",
+        "title": "Molybdenum - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "nickel_dissolved",
+        "title": "Nickel - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.7,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "nickel_dissolved_ldl",
+        "title": "Nickel - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "rubidium_dissolved",
+        "title": "Rubidium - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 2.5,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "rubidium_dissolved_ldl",
+        "title": "Rubidium - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "selenium_dissolved",
+        "title": "Selenium - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 1.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "selenium_dissolved_ldl",
+        "title": "Selenium - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.3,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "silver_dissolved",
+        "title": "Silver - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 1.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "silver_dissolved_ldl",
+        "title": "Silver - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "strontium_dissolved",
+        "title": "Strontium - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 200,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "strontium_dissolved_ldl",
+        "title": "Strontium - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "thallium_dissolved",
+        "title": "Thallium - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 1.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "thallium_dissolved_ldl",
+        "title": "Thallium - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "titanium_dissolved",
+        "title": "Titanium - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 1.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "titanium_dissolved_ldl",
+        "title": "Titanium - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "uranium_dissolved",
+        "title": "Uranium - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.4,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "uranium_dissolved_ldl",
+        "title": "Uranium - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "vanadium_dissolved",
+        "title": "Vanadium - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.6,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "vanadium_dissolved_ldl",
+        "title": "Vanadium - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "zinc_dissolved",
+        "title": "Zinc - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 1.8,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "zinc_dissolved_ldl",
+        "title": "Zinc - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.4,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "aluminum_total",
+        "title": "Aluminum - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 31.3,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "aluminum_total_ldl",
+        "title": "Aluminum - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 5,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "antimony_total",
+        "title": "Antimony - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "antimony_total_ldl",
+        "title": "Antimony - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "arsenic_total",
+        "title": "Arsenic - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.5,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "arsenic_total_ldl",
+        "title": "Arsenic - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "barium_total",
+        "title": "Barium - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 52.3,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "barium_total_ldl",
+        "title": "Barium - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "beryllium_total",
+        "title": "Beryllium - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "beryllium_total_ldl",
+        "title": "Beryllium - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "cadmium_total",
+        "title": "Cadmium - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "cadmium_total_ldl",
+        "title": "Cadmium - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.5,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "cesium_total",
+        "title": "Cesium - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "cesium_total_ldl",
+        "title": "Cesium - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "chromium_total",
+        "title": "Chromium - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 2.8,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "chromium_total_ldl",
+        "title": "Chromium - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "cobalt_total",
+        "title": "Cobalt - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.6,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "cobalt_total_ldl",
+        "title": "Cobalt - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "copper_total",
+        "title": "Copper - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 2.7,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "copper_total_ldl",
+        "title": "Copper - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "iron_total",
+        "title": "Iron - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 28,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "iron_total_ldl",
+        "title": "Iron - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 5,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "lead_total",
+        "title": "Lead - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.6,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "lead_total_ldl",
+        "title": "Lead - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "lithium_total",
+        "title": "Lithium - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 4.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "lithium_total_ldl",
+        "title": "Lithium - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "manganese_total",
+        "title": "Manganese - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 1.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "manganese_total_ldl",
+        "title": "Manganese - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "mercury_total",
+        "title": "Mercury - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 1.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "mercury_total_ldl",
+        "title": "Mercury - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.01,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "molybdenum_total",
+        "title": "Molybdenum - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.3,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "molybdenum_total_ldl",
+        "title": "Molybdenum - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "nickel_total",
+        "title": "Nickel - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 2.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "nickel_total_ldl",
+        "title": "Nickel - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "rubidium_total",
+        "title": "Rubidium - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 5.3,
+        "raises": "warning",
+        "constraints": {
+        "minimum": 0
+      }
+      },
+      {
+        "name": "rubidium_total_ldl",
+        "title": "Rubidium - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "selenium_total",
+        "title": "Selenium - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 1.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "selenium_total_ldl",
+        "title": "Selenium - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.3,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "silver_total",
+        "title": "Silver - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "silver_total_ldl",
+        "title": "Silver - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "strontium_total",
+        "title": "Strontium - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 300,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "strontium_total_ldl",
+        "title": "Strontium - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "thallium_total",
+        "title": "Thallium - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "thallium_total_ldl",
+        "title": "Thallium - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "titanium_total",
+        "title": "Titanium - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 1.5,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "titanium_total_ldl",
+        "title": "Titanium - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "uranium_total",
+        "title": "Uranium - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "uranium_total_ldl",
+        "title": "Uranium - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "vanadium_total",
+        "title": "Vanadium - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 2.9,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "vanadium_total_ldl",
+        "title": "Vanadium - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.1,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "zinc_total",
+        "title": "Zinc - Total",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 5.3,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "zinc_total_ldl",
+        "title": "Zinc - Total LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.4,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "ultra_trace_mercury_dissolved",
+        "title": "Ultra Trace Mercury - Dissolved",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.3,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "ultra_trace_mercury_dissolved_ldl",
+        "title": "Ultra Trace Mercury - Dissolved LDL",
+        "type": "number",
+        "unit": "µg/L",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "ultra_trace_mercury_total",
+        "title": "Ultra Trace Mercury - Total",
+        "type": "number",
+        "unit": "",
+        "example": 0.4,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "ultra_trace_mercury_total_ldl",
+        "title": "Ultra Trace Mercury - Total LDL",
+        "type": "number",
+        "unit": "",
+        "example": 0.2,
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "hardness_calculated",
+        "title": "Hardness (calculated)",
+        "type": "number",
+        "unit": "mg/L",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "temperature",
+        "title": "Temperature",
+        "type": "number",
+        "unit": "oC",
+        "example": "",
+        "raises": "warning",
+        "constraints": {
+          "minimum": 0
+          }
+      },
+      {
+        "name": "update_frequency",
+        "title": "Update Frequency",
+        "type": "string",
+        "unit": "",
+        "example": "annual"
+      },
+      {
+        "name": "status",
+        "title": "Status",
+        "type": "string",
+        "unit": "",
+        "example": "ongoing"
+      },
+      {
+        "name": "qc_qa_status",
+        "title": "QC/QA Status",
+        "type": "string",
+        "unit": "",
+        "example": "Sample"
+      },
+      {
+        "name": "validation_type",
+        "title": "Validation type",
+        "type": "string",
+        "unit": "",
+        "example": "Protocol A"
+      },
+      {
+        "name": "sample_depth",
+        "title": "Depth of Sample",
+        "type": "string",
+        "unit": "",
+        "example": "surface"
+      },
+      {
+        "name": "sample_location_type",
+        "title": "Sample Location Type",
+        "type": "string",
+        "unit": "",
+        "example": "bouy"
+      },
+      {
+        "name": "analysis_lab",
+        "title": "Analysis Lab",
+        "type": "string",
+        "unit": "",
+        "example": "Taiga"
+      },
+      {
+        "name": "lab_analysis_date",
+        "title": "Lab Analysis Date",
+        "type": "string",
+        "unit": "",
+        "example": ""
+      }
+    ]
 }
