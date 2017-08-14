@@ -1810,6 +1810,16 @@
         "type": "string",
         "unit": "",
         "example": ""
+      },
+      {
+      "name": "latitude",
+      "title": "Latitude",
+      "type": "number"
+      },
+      {
+      "name": "longitude",
+      "title": "Longitude",
+      "type": "number"
       }
     ]
 }
