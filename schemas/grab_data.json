@@ -1814,12 +1814,16 @@
       {
       "name": "latitude",
       "title": "Latitude",
-      "type": "number"
+      "units": "decimal degrees",
+      "type": "number",
+      "example": "60.8507"
       },
       {
       "name": "longitude",
       "title": "Longitude",
-      "type": "number"
+      "units": "decimal degrees",
+      "type": "number",
+      "example": "-118.0891"
       }
     ]
 }
