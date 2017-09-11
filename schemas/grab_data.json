@@ -1777,6 +1777,55 @@
         "example": "Sample"
       },
       {
+        "name": "equipment_blank",
+        "title": "Equipment Blank",
+        "type": "boolean",
+        "unit": "",
+        "example": "true"
+      },
+      {
+        "name": "filtration_blank",
+        "title": "Filtration Blank",
+        "type": "boolean",
+        "unit": "",
+        "example": "true"
+      },
+      {
+        "name": "spiked_blank",
+        "title": "Spiked Blank",
+        "type": "boolean",
+        "unit": "",
+        "example": "true"
+      },
+      {
+        "name": "replicate",
+        "title": "Replicate",
+        "type": "boolean",
+        "unit": "",
+        "example": "true"
+      },
+      {
+        "name": "triplicate",
+        "title": "Triplicate",
+        "type": "boolean",
+        "unit": "",
+        "example": "true"
+      },
+      {
+        "name": "split_sample",
+        "title": "Split Sample",
+        "type": "boolean",
+        "unit": "",
+        "example": "true"
+      },
+      {
+        "name": "rerun",
+        "title": "ReRun",
+        "type": "boolean",
+        "unit": "",
+        "example": "true"
+      },
+      {
         "name": "validation_type",
         "title": "Validation type",
         "type": "string",
